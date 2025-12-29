@@ -1,6 +1,6 @@
 
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import App from './App';
 
 console.log("NovaCore: Initializing React Application...");
@@ -9,7 +9,7 @@ const rootElement = document.getElementById('root');
 if (!rootElement) {
   console.error("NovaCore Error: Could not find root element to mount to.");
 } else {
-  const root = ReactDOM.createRoot(rootElement);
+  const root = createRoot(rootElement);
   root.render(
     <React.StrictMode>
       <App />
